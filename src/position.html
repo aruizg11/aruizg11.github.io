@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cuadrado{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: fixed;
+            /*left: 100px;*/
+            top: 100px;
+            right: 100px;
+            /*bottom: 5px;*/
+            z-index: 10;
+        }
+        .verde{
+            width: 400px;
+            height: 400px;
+            background-color: green;
+            position: fixed;
+            top: 150px;
+            right: 150px;
+            z-index: 20;
+        }
+        .circulo{
+            width: 20px;
+            height: 20px;
+            background-color: blue;
+            border-radius: 50%;
+            position: absolute;
+            right: 50px;
+            bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cuadrado"></div>
+    <div class="verde">
+        <div class="circulo"></div>
+    </div>
+</body>
+</html>

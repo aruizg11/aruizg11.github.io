@@ -1,0 +1,38 @@
+header{
+    background-color: aqua;
+    font-size: 28px;
+    width: 80vw;
+    text-align: center;
+}
+menu{
+    
+}
+menu a{
+    padding-left: 20px;
+}
+aside{
+    width: 30vw;
+    height: 100vh;
+    background-color: yellow;
+    float: left;
+}
+main{
+    width: 70vw;
+    height: 100vh;
+    background-color: pink;
+    float: right;
+}
+.principal{
+    width: 100vw;
+    height: 100vh;
+}
+footer{
+    background-color: blue;
+    width: 100vw;
+    height: 10vh;
+    position: sticky;
+    top: 40vh;
+}
+.icon{
+    height: 35px;
+}

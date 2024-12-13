@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cyl{
+            list-style-type: square;
+        }
+        .val{
+            list-style-type: lower-greek;
+        }
+        .horizontal{
+            display: inline;
+            margin-right: 10px;
+            border: 1px solid blue
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Provincias</h1>
+    <ul>
+        <li>Extremadura</li>
+            <ul>
+                <li>Badajoz</li>
+                <li>Cáceres</li>
+            </ul>
+        <li>Castilla y León</li>
+            <ul class="cyl horizontal">
+                <li>Salamanca</li>
+                <li>Segovia</li>
+                <li>León</li>
+                <li>Zamora</li>
+                <li>Valladolid</li>
+                <li>Palencia</li>
+                <li>Burgos</li>
+                <li>Soria</li>
+                <li>Ávila</li>
+            </ul>
+    </ul>
+    <ol>
+        <li>Cataluña</li>
+            <ol>
+                <li>Barcelona</li>
+                <li>Gerona</li>
+                <li>Lérida</li>
+                <li>Tarragona</li>
+            </ol>
+        <li>Comunidad Valenciana</li>
+            <ol class="val">
+                <li>Valencia</li>
+                <li>Alicante</li>
+                <li>Castellón</li>
+            </ol>
+    </ol>
+    <ul class="horizontal">
+        <li class="horizontal">JavaScript</li>
+        <li class="horizontal">Java</li>
+        <li class="horizontal">Python</li>
+    </ul>
+</body>
+</html>
