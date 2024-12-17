@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web de Andrés</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "menu main aside"
+                "footer footer footer";
+            grid-template-columns: 20% 60% 20%;
+            grid-template-rows: 70px auto 50px;
+            height: 100vh;
+        }
+        header {
+            grid-area: header;
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        footer {
+            grid-area: footer;
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+        aside {
+            grid-area: aside;
+            background-color: #f4f4f4;
+            padding: 1rem;
+        }
+        nav {
+            grid-area: menu;
+            background-color: #ddd;
+            padding: 1rem;
+        }
+        nav a {
+            display: block;
+            margin: 0.5rem 0;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+        main {
+            grid-area: main;
+            padding: 1rem;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Web de Andrés
+    </header>
+    <nav>
+        <h2>Menú</h2>
+        <a href="src/apuntes-apw.html" target="iframe_a">Apuntes APW</a>
+        <a href="src/cajas.html" target="iframe_a">Cajas</a>
+        <a href="src/codigohtml5.html" target="iframe_a">Código HTML 5</a>
+        <a href="src/comentarios.html" target="iframe_a">Comentarios</a>
+        <a href="src/estilos.html" target="iframe_a">Estilos</a>
+        <a href="src/etiquetas-de-texto-html.html" target="iframe_a">Etiquetas de Texto HTML</a>
+        <a href="src/hola.html" target="iframe_a">Etiquetas de texto HTML (2)<a>
+        <a href="src/horario.html" target="iframe_a">Horario</a>
+        <a href="src/html5.html" target="iframe_a">HTML 5</a>
+        <a href="src/iconos.html" target="iframe_a">Iconos</a>
+        <a href="src/iframe.html" target="iframe_a">Iframe</a>
+        <a href="src/index.html" target="iframe_a">Index</a>
+        <a href="src/lista.html" target="iframe_a">Listas</a>
+        <a href="src/position.html" target="iframe_a">Position</a>
+        <a href="src/repaso.html" target="iframe_a">Repaso</a>
+    </nav>
+    <main>
+        <iframe name="iframe_a" src="src/apuntes-apw.html"></iframe>
+    </main>
+    <aside>
+        <h2>Enlaces de interés</h2>
+        <a href="https://www.w3schools.com">W3Schools</a> <br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN</a> <br>
+        <a href="https://www.w3.org/">W3C</a>
+    </aside>
+    <footer>
+        &copy; 2024 Andrés
+    </footer>
+</body>
+</html>
